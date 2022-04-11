@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="../css/appointments-style.css">
+	
+	<link href="../js/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+	
+	<link href="../js/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+	<link href="../js/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+
+
+	<title>Staff's Name | Lagman Qualicare Family Clinic</title>
+</head>
+<body>
+	
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="calendar.html" class="brand"><img class='logo' src="../../assets/images/logo/logo.png"></a>
+		<ul class="side-menu">
+			<li><a href="dashboard.html"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+			<li><a href="notification.html"><i class='bx bxs-bell icon' ></i> Notifications<span class="badge">3</span></a></li>
+			<li class="divider" data-text="main">Main</li>
+			
+			<li><a href="appointments.html" class="active"><i class='bx bxs-book-heart icon' ></i> Appointments</a></li>
+			<li><a href="calendar.html"><i class='bx bxs-calendar icon' ></i> Calendar</a></li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+			</form>
+			
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="files/profile.jpg"alt="">
+				<ul class="profile-link">
+					<li><a href="profile.html"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="settings.html"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<section class="ftco-section">
+				<div class="container">
+					
+			<h1 class="title">Appointments</h1>
+					<div class="row">
+						<div class="col-sm-6 col-md-9">
+							<form action="#">
+							<div class="form-group">
+								<input type="text" placeholder="Search...">
+							</div>
+							</form>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<form>
+								   <div class="rs-select2 js-select-simple select--no-search">
+									 <select name="subject">
+										<option disabled="disabled" selected="selected">Sort by:</option>
+										<option>Name</option>
+										<option>Status</option>
+										<option>Age</option>
+										<option>Gender</option>
+									 </select>
+									 <div class="select-dropdown"></div>
+								  </div>
+								</form>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="card p-3 mb-4">
+								<div class="d-flex justify-content-between mb-4">
+									<div class="user-info">
+										<div class="user-info__img">
+											<img src="../patient/files/placeholder.jpg" alt="User Img">
+										</div>
+										<div class="user-info__basic">
+											<h6 class="mb-0">Appointment # 9</h6>
+											<h5 class="text-highlight mb-0">Kiran Acharya</h5>
+											<p class="text-muted mb-0">28 yrs | Female | 09563520905</p>
+										</div>
+									</div>
+									<div class="dropdown open">
+										<a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fa fa-ellipsis-v"></i>
+										</a>
+										<div class="dropdown-menu" aria-labelledby="triggerId1">
+											<a class="dropdown-item" href="#"><i class="fa fa-check mr-1"></i>Done</a>
+											<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Cancel</a>
+										</div>
+									</div>
+								</div>
+								<h6 class="mb-0">Symptoms:</h6>
+									<p>Headache, Vomiting</p>
+								<hr>
+								<h6 class="mb-0">Pre-diagnose Results:</h6>
+									<p>Fever</p>
+								<div class="d-flex justify-content-between mt-4">
+									<div>
+										<h5 class="mb-0">06:00 PM
+											<small class="ml-1">2 Feb 2021</small>
+										</h5>
+									</div>
+									<span class="text-primary font-weight-bold">Pending</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="card p-3 mb-4">
+								<div class="d-flex justify-content-between mb-4">
+									<div class="user-info">
+										<div class="user-info__img">
+											<img src="../patient/files/placeholder.jpg" alt="User Img">
+										</div>
+										<div class="user-info__basic">
+											<h6 class="mb-0">Appointment # 8</h6>
+											<h5 class="text-highlight mb-0">Sandeep Hegde</h5>
+											<p class="text-muted mb-0">28 yrs | Female | 09563520905</p>
+										</div>
+									</div>
+									<div class="dropdown open">
+										<a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fa fa-ellipsis-v"></i>
+										</a>
+										<div class="dropdown-menu" aria-labelledby="triggerId1">
+											<a class="dropdown-item" href="#"><i class="fa fa-check mr-1"></i>Done</a>
+											<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Cancel</a>
+										</div>
+									</div>
+								</div>
+								<h6 class="mb-0">Symptoms:</h6>
+									<p>Headache, Vomiting</p>
+								<hr>
+								<h6 class="mb-0">Pre-diagnose Results:</h6>
+									<p>Fever</p>
+								<div class="d-flex justify-content-between mt-4">
+									<div>
+										<h5 class="mb-0">06:30 PM
+											<small class="ml-1">2 Feb 2021</small>
+										</h5>
+									</div>
+									<span class="text-primary font-weight-bold">Pending</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="card p-3 mb-4">
+								<div class="d-flex justify-content-between mb-4">
+									<div class="user-info">
+										<div class="user-info__img">
+											<img src="../patient/files/placeholder.jpg" alt="User Img">
+										</div>
+										<div class="user-info__basic">
+											<h6 class="mb-0">Appointment # 7</h6>
+											<h5 class="text-highlight mb-0">John Doe</h5>
+											<p class="text-muted mb-0">28 yrs | Female | 09563520905</p>
+										</div>
+									</div>
+									<div class="dropdown open">
+										<a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fa fa-ellipsis-v"></i>
+										</a>
+										<div class="dropdown-menu" aria-labelledby="triggerId1">
+											<a class="dropdown-item" href="#"><i class="fa fa-check mr-1"></i>Done</a>
+											<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Cancel</a>
+										</div>
+									</div>
+								</div>
+								<h6 class="mb-0">Symptoms:</h6>
+									<p>Headache, Vomiting</p>
+								<hr>
+								<h6 class="mb-0">Pre-diagnose Results:</h6>
+									<p>Fever</p>
+								<div class="d-flex justify-content-between mt-4">
+									<div>
+										<h5 class="mb-0">07:00 PM
+											<small class="ml-1">2 Feb 2021</small>
+										</h5>
+									</div>
+									<span class="text-success font-weight-bold">Done</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="card p-3 mb-4">
+								<div class="d-flex justify-content-between mb-4">
+									<div class="user-info">
+										<div class="user-info__img">
+											<img src="../patient/files/placeholder.jpg" alt="User Img">
+										</div>
+										<div class="user-info__basic">
+											<h6 class="mb-0">Appointment # 6</h6>
+											<h5 class="text-highlight mb-0">Vishwanath</h5>
+											<p class="text-muted mb-0">28 yrs | Female | 09563520905</p>
+										</div>
+									</div>
+									<div class="dropdown open">
+										<a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fa fa-ellipsis-v"></i>
+										</a>
+										<div class="dropdown-menu" aria-labelledby="triggerId1">
+											<a class="dropdown-item" href="#"><i class="fa fa-check mr-1"></i>Done</a>
+											<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Cancel</a>
+										</div>
+									</div>
+								</div>
+								<h6 class="mb-0">Symptoms:</h6>
+									<p>Headache, Vomiting</p>
+								<hr>
+								<h6 class="mb-0">Pre-diagnose Results:</h6>
+									<p>Fever</p>
+								<div class="d-flex justify-content-between mt-4">
+									<div>
+										<h5 class="mb-0">07:15 PM
+											<small class="ml-1">2 Feb 2021</small>
+										</h5>
+									</div>
+									<span class="text-success font-weight-bold">Done</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="card p-3 mb-4">
+								<div class="d-flex justify-content-between mb-4">
+									<div class="user-info">
+										<div class="user-info__img">
+											<img src="../patient/files/placeholder.jpg" alt="User Img">
+										</div>
+										<div class="user-info__basic">
+											<h6 class="mb-0">Appointment # 5</h6>
+											<h5 class="text-highlight mb-0">Kiran Acharya</h5>
+											<p class="text-muted mb-0">28 yrs | Female | 09563520905</p>
+										</div>
+									</div>
+									<div class="dropdown open">
+										<a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fa fa-ellipsis-v"></i>
+										</a>
+										<div class="dropdown-menu" aria-labelledby="triggerId1">
+											<a class="dropdown-item" href="#"><i class="fa fa-check mr-1"></i>Done</a>
+											<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Cancel</a>
+										</div>
+									</div>
+								</div>
+								<h6 class="mb-0">Symptoms:</h6>
+									<p>Headache, Vomiting</p>
+								<hr>
+								<h6 class="mb-0">Pre-diagnose Results:</h6>
+									<p>Fever</p>
+								<div class="d-flex justify-content-between mt-4">
+									<div>
+										<h5 class="mb-0">06:30 PM
+											<small class="ml-1">3 Feb 2021</small>
+										</h5>
+									</div>
+									<span class="text-success font-weight-bold">Done</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="card p-3 mb-4">
+								<div class="d-flex justify-content-between mb-4">
+									<div class="user-info">
+										<div class="user-info__img">
+											<img src="../patient/files/placeholder.jpg" alt="User Img">
+										</div>
+										<div class="user-info__basic">
+											<h6 class="mb-0">Appointment # 4</h6>
+											<h5 class="text-highlight mb-0">Sandeep Hegde</h5>
+											<p class="text-muted mb-0">28 yrs | Female | 09563520905</p>
+										</div>
+									</div>
+									<div class="dropdown open">
+										<a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fa fa-ellipsis-v"></i>
+										</a>
+										<div class="dropdown-menu" aria-labelledby="triggerId1">
+											<a class="dropdown-item" href="#"><i class="fa fa-check mr-1"></i>Done</a>
+											<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Cancel</a>
+										</div>
+									</div>
+								</div>
+								<h6 class="mb-0">Symptoms:</h6>
+									<p>Headache, Vomiting</p>
+								<hr>
+								<h6 class="mb-0">Pre-diagnose Results:</h6>
+									<p>Fever</p>
+								<div class="d-flex justify-content-between mt-4">
+									<div>
+										<h5 class="mb-0">07:00 PM
+											<small class="ml-1">3 Feb 2021</small>
+										</h5>
+									</div>
+									<span class="text-success font-weight-bold">Done</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="card p-3 mb-4">
+								<div class="d-flex justify-content-between mb-4">
+									<div class="user-info">
+										<div class="user-info__img">
+											<img src="../patient/files/profile.jpg" alt="User Img">
+										</div>
+										<div class="user-info__basic">
+											<h6 class="mb-0">Appointment # 3</h6>
+											<h5 class="text-highlight mb-0">Lee Ji-eun</h5>
+											<p class="text-muted mb-0">28 yrs | Female | 09563520905</p>
+										</div>
+									</div>
+									<div class="dropdown open">
+										<a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fa fa-ellipsis-v"></i>
+										</a>
+										<div class="dropdown-menu" aria-labelledby="triggerId1">
+											<a class="dropdown-item" href="#"><i class="fa fa-check mr-1"></i>Done</a>
+											<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Cancel</a>
+										</div>
+									</div>
+								</div>
+								<h6 class="mb-0">Symptoms:</h6>
+									<p>Headache, Vomiting</p>
+								<hr>
+								<h6 class="mb-0">Pre-diagnose Results:</h6>
+									<p>Fever</p>
+								<div class="d-flex justify-content-between mt-4">
+									<div>
+										<h5 class="mb-0">06:30 PM
+											<small class="ml-1">2 Feb 2021</small>
+										</h5>
+									</div>
+									<span class="text-success font-weight-bold">Done</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="card p-3 mb-4">
+								<div class="d-flex justify-content-between mb-4">
+									<div class="user-info">
+										<div class="user-info__img">
+											<img src="../patient/files/placeholder.jpg" alt="User Img">
+										</div>
+										<div class="user-info__basic">
+											<h6 class="mb-0">Appointment # 2</h6>
+											<h5 class="text-highlight mb-0">Sandeep Hegde</h5>
+											<p class="text-muted mb-0">28 yrs | Male | 09563520905</p>
+										</div>
+									</div>
+									<div class="dropdown open">
+										<a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fa fa-ellipsis-v"></i>
+										</a>
+										<div class="dropdown-menu" aria-labelledby="triggerId1">
+											<a class="dropdown-item" href="#"><i class="fa fa-check mr-1"></i>Done</a>
+											<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Cancel</a>
+										</div>
+									</div>
+								</div>
+								<h6 class="mb-0">Symptoms:</h6>
+									<p>Headache, Vomiting</p>
+								<hr>
+								<h6 class="mb-0">Pre-diagnose Results:</h6>
+									<p>Fever</p>
+								<div class="d-flex justify-content-between mt-4">
+									<div>
+										<h5 class="mb-0">06:30 PM
+											<small class="ml-1">2 Feb 2021</small>
+										</h5>
+									</div>
+									<span class="text-success font-weight-bold">Done</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="card p-3 mb-4">
+								<div class="d-flex justify-content-between mb-4">
+									<div class="user-info">
+										<div class="user-info__img">
+											<img src="../patient/files/placeholder.jpg" alt="User Img">
+										</div>
+										<div class="user-info__basic">
+											<h6 class="mb-0">Appointment # 1</h6>
+											<h5 class="text-highlight mb-0">Sandeep Hegde</h5>
+											<p class="text-muted mb-0">28 yrs | Female | 09563520905</p>
+										</div>
+									</div>
+									<div class="dropdown open">
+										<a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fa fa-ellipsis-v"></i>
+										</a>
+										<div class="dropdown-menu" aria-labelledby="triggerId1">
+											<a class="dropdown-item" href="#"><i class="fa fa-check mr-1"></i>Done</a>
+											<a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Cancel</a>
+										</div>
+									</div>
+								</div>
+								<h6 class="mb-0">Symptoms:</h6>
+									<p>Headache, Vomiting</p>
+								<hr>
+								<h6 class="mb-0">Pre-diagnose Results:</h6>
+									<p>Fever</p>
+								<div class="d-flex justify-content-between mt-4">
+									<div>
+										<h5 class="mb-0">06:30 PM
+											<small class="ml-1">2 Feb 2021</small>
+										</h5>
+									</div>
+									<span class="text-success font-weight-bold">Done</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+		</main>
+	<!-- NAVBAR -->
+	
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+	<script src="../js/vendor/jquery/jquery.min.js"></script>
+      <script src="../js/vendor/select2/select2.min.js"></script>
+      <script src="../js/global.js"></script>
+	  <script src="../js/script.js"></script>
+
+	<!-- Patients JS -->
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>

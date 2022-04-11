@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/settings.css">
+
+	<link href="../js/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+	<link href="../js/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+
+	<link href="../js/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../js/vendor/select2/slimselect.min.css" rel="stylesheet" media="all">
+	<link href="../js/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+	<title>Admins's Name | Lagman Qualicare Family Clinic</title>
+</head>
+
+<body ng-app="myApp" ng-controller="MainController">
+	
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		
+		<a href="settings.html" class="brand"><img class='logo' src="../../assets/images/logo/logo.png"></a>
+		<ul class="side-menu">
+			<li><a href="dashboard.html"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+			<li class="divider" data-text="main">Main</li>
+			
+			<li><a href="doctors.html"><i class='bx bxs-face icon' ></i> Doctors</a></li>
+			
+			
+			<li><a href="staffs.html"><i class='bx bxs-contact icon' ></i> Staffs</a></li>
+			<li><a href="patients.html" ><i class='bx bxs-user icon' ></i> Patients</a></li>
+			<li><a href="appointments.html"><i class='bx bxs-book-heart icon' ></i> Appointments</a></li>
+			
+			
+			<li><a href="branches.html" class="active"><i class='bx bxs-map icon' ></i> Branches</a></li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+			</form>
+			<span class="divider"></span>
+			<div class="profile">
+				
+				<img src="files/placeholder.jpg"alt=""><ul class="profile-link">
+					<li><a href="profile.html"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="settings.html"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<section class="ftco-section">
+				
+				<div class="container">
+					
+			<h1 class="title">Manage Branch</h1>
+					<div class="bg-white shadow rounded-lg d-block d-sm-flex">
+						<div class="profile-tab-nav border-right">
+							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">
+									<i class="fa fa-info text-center mr-1"></i> 
+									Information
+								</a>
+								<a class="nav-link" id="notification-tab" data-toggle="pill" href="#timeslots" role="tab" aria-controls="notification" aria-selected="false">
+									<i class="fa fa-cog text-center mr-1"></i> 
+									Time Slots
+								</a>
+								<a class="nav-link" id="application-tab" data-toggle="pill" href="#roles" role="tab" aria-controls="application" aria-selected="false">
+									<i class="fa fa-tasks text-center mr-1"></i> 
+									Roles
+								</a>
+								<a class="nav-link" id="notification-tab" data-toggle="pill" href="#deactivation" role="tab" aria-controls="notification" aria-selected="false">
+									<i class="fa fa-cog text-center mr-1"></i> 
+									Delete
+								</a>
+							</div>
+						</div>
+						<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+							<div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+								<h3 class="mb-4">Information Settings</h3>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="text-group">
+											  <label>Branch Name</label>
+											  <input type="text" class="form-control" value="Angeles Branch">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="text-group">
+											  <label>Line</label>
+											  <input type="text" class="form-control" value="+91 9876543215">
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="text-group">
+											  <label>Address</label>
+											  <input type="text" class="form-control" value="Lagman Medical Clinic, 4HGX+X24, Angeles, Pampanga">
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="text-group">
+											<label>Header</label>
+											</div>
+											<div class="branch-upload">
+												<div class="branch-edit">
+													<input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+													<label for="imageUpload"></label>
+												</div>
+												<div class="branch-preview">
+													<div id="imagePreview" style="background-image: url()">
+													</div>
+												</div>
+											</div>
+									</div>
+								</div>
+								<div>
+									<br>
+									<button class="btn btn__primary btn__rounded ml-30">Update</button>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="timeslots" role="tabpanel" aria-labelledby="application-tab">
+								<h3 class="mb-3">Time Slots Settings</h3>
+								<div class="row">
+									
+									<button type="button" style="float:right;margin-bottom: 10px;" class="btn btn-info " ng-click="addTimeslot()">Add Time Slot</button>
+      
+									<div class="col-md-12">
+										
+
+										<div class="table-responsive-xl">
+											<table id="mytable" class="table">
+						  
+												<thead>
+												<th>Start Time</th>
+												<th>End Time</th>                
+												</thead>
+						
+												<tbody>
+										 
+												  <tr ng-repeat="emp in empoyees">
+												  <td>
+													  <input type="time"class="form-control">
+												  </td>
+												  <td>
+													  <input type="time" class="form-control"/>
+												  </td>
+								  
+												  <td >
+													  <button class="btn btn-danger" ng-click="deleteTimeslot($index)">Delete</button>
+													
+												  </td>
+												  </tr>
+												  
+
+												  </a>
+												</tbody>
+						
+											</table>
+										  </div>
+
+
+
+											  
+									
+										 
+									</div>
+									
+								</div>
+								<div>
+									<br>
+									<button class="btn btn__primary btn__rounded ml-30">Update</button>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="roles" role="tabpanel" aria-labelledby="application-tab">
+								<h3 class="mb-3">Roles Settings</h3>
+								<div class="row">
+									<div class="col-md-12">
+									<label>Assigned Doctors</label>
+									<select id="specialization" multiple>
+										<option value="1" >Dr 1</option>
+										<option value="2">Dr 2</option>
+										<option value="3">Dr 3</option>
+										<option value="4">Dr 4</option>
+										<option value="5">Dr 5</option>
+									</select>
+									</div>
+									<br><br><br>
+									<div class="col-md-12">
+										<label>Assigned Staffs</label>
+										<select id="branches" multiple>
+											<option value="1" >Staff 1</option>
+											<option value="2">Staff 1</option>
+											<option value="3">Staff 3</option>
+											<option value="4">Staff 4</option>
+											<option value="5">Staff 5</option>
+										</select>
+										</div>
+								</div>
+								<div>
+									<br>
+									<button class="btn btn__primary btn__rounded ml-30">Update</button>
+								</div>
+							</div>
+
+							
+							
+							<div class="tab-pane fade" id="deactivation" role="tabpanel" aria-labelledby="notification-tab">
+								<h3 class="mb-4">Delete Settings</h3>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="text-group">
+											<p>If you wish to remove this doctor's account profile in database. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vero enim error similique quia numquam ullam corporis officia odio repellendus aperiam consequatur laudantium porro voluptatibus, itaque laboriosam veritatis voluptatum distinctio!</p>
+										</div>
+									</div>
+								</div>
+								<div>
+									<button class="btn btn__primary btn__rounded ml-30">Remove Branch</button>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+
+
+
+			</section>
+		</main>
+	<!-- NAVBAR -->
+
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="../js/script.js"></script>
+
+	<!-- Patients JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.21.0/slimselect.js'></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<!-- Settings JS -->
+	<script src="../js/vendor/jquery/jquery.min.js"></script>
+	<script src="../js/vendor/select2/select2.min.js"></script>
+	<script src="../js/vendor/datepicker/moment.min.js"></script>
+	<script src="../js/vendor/datepicker/daterangepicker.js"></script>
+	<script src="../js/global.js"></script>
+	
+	<!-- Time Select JS-->
+	
+    <script src="../js/vendor/timepicker/angular.min.js"></script>
+    <script src="../js/vendor/timepicker/app.js"></script>
+
+	
+	<script>
+		new SlimSelect({
+		  select: '#specialization'
+		  });
+		new SlimSelect({
+		  select: '#branches'
+		  });
+	</script>
+
+
+<script>
+
+	function readURL(input) {
+		if (input.files && input.files[0]) {
+			var reader = new FileReader();
+			reader.onload = function(e) {
+				$('#imagePreview').css('background-image', 'url('+e.target.result +')');
+				$('#imagePreview').hide();
+				$('#imagePreview').fadeIn(650);
+			}
+			reader.readAsDataURL(input.files[0]);
+		}
+	}
+	$("#imageUpload").change(function() {
+		readURL(this);
+	});
+	
+</script>
+
+<script>
+      
+	$(function(){
+		$('.timepicker').timepicker({
+			  showInputs: false
+		})
+	});
+	
+	</script>
+	
+	 
+	 
+</body>
+</html>
